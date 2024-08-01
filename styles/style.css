@@ -85,7 +85,7 @@ body {
   }
 
   .stars::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 200px;
     width: 1px;
@@ -102,7 +102,7 @@ body {
   }
 
   .stars2::after {
-    content: ' ';
+    content: " ";
     position: absolute;
     top: 2000px;
     width: 2px;
@@ -119,7 +119,7 @@ body {
   }
 
   .stars3::after {
-    content: ' ';
+    content: " ";
     position: absolute;
     top: 2000px;
     width: 3px;
@@ -144,8 +144,8 @@ body {
       .main-subtitle {
         font-size: 2.5rem;
         color: rgb(27, 27, 27);
-        /*-webkit-box-reflect: below 25px
-          linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 100%);*/
+        -webkit-box-reflect: below 25px
+          linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
       }
     }
   }
@@ -209,7 +209,7 @@ body {
             transform: translateY(-10px);
           }
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
@@ -269,8 +269,8 @@ body {
         font-size: 2.6rem;
       }
       .studies-text {
+        width: 65vw;
         margin-block: 20px;
-        width: 55vw;
         font-size: 1.2rem;
         color: rgb(178, 179, 182);
       }
@@ -319,7 +319,7 @@ body {
             justify-content: center;
 
             &::before {
-              content: 'finalizado';
+              content: "finalizado";
               position: absolute;
               width: 150%;
               height: 2.5rem;
@@ -341,7 +341,7 @@ body {
             }
 
             &::after {
-              content: '';
+              content: "";
               position: absolute;
               width: 10px;
               height: 10px;
@@ -383,87 +383,100 @@ body {
 
   /* SECCION PROYECTOS */
 
-  .proyects-title {
-    color: aliceblue;
-  }
-
-  .proyects-text {
-    color: rgb(178, 179, 182);
-  }
-
-  .proyect-card {
-    position: relative;
-    width: 23rem;
-    height: 15rem;
-    background-color: #f2f2f2;
-    border-radius: 10px;
+  .proyects-containerinfo {
     display: flex;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    perspective: 1000px; /* Este estilo es para que haga el efecto de que el contenido se levanta de abajo */
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-    img {
-      width: 100%;
-      height: 100%;
-      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    flex-direction: column;
+    .proyects-title {
+      font-size: 2.6rem;
+      color: aliceblue;
     }
 
-    &:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0px 25px 8px #ffffff80;
-      .proyect-cardcontent {
-        transform: rotateX(0deg);
-      }
-      img {
-        scale: 0;
-      }
+    .proyects-text {
+      width: 65vw;
+      font-size: 1.2rem;
+      color: rgb(178, 179, 182);
     }
+  }
 
-    .proyect-cardcontent {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      padding: 20px;
+  .proyect-cardscontainer {
+    margin-top: 2rem;
+    .proyect-card {
+      position: relative;
+      width: 23rem;
+      height: 15rem;
       background-color: #f2f2f2;
-      transform: rotateX(-90deg);
-      transform-origin: bottom;
-      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       overflow: hidden;
+      perspective: 1000px; /* Este estilo es para que haga el efecto de que el contenido se levanta de abajo */
+      box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      padding-right: 0;
+      padding-left: 0;
 
-      .proyect-cardtitle {
-        margin: 0;
-        font-size: 1.5rem;
-        color: #333;
-        font-weight: 700;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       }
 
-      .proyect-cardescrip {
-        font-size: 1rem;
-        color: #777;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0px 25px 8px #ffffff80;
+        .proyect-cardcontent {
+          transform: rotateX(0deg);
+        }
+        /*img {
+        scale: 0;
+      }*/
       }
 
-      .proyect-btns {
-        display: flex;
-        align-items: end;
-        gap: 10px;
+      .proyect-cardcontent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        background-color: #f2f2f2;
+        transform: rotateX(-90deg);
+        transform-origin: bottom;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        overflow: hidden;
 
-        .proyect-cardlink {
-          color: aliceblue;
-          background-color: #333;
-          text-decoration: none;
-          padding: 0.6rem 0.9rem;
-          border-radius: 15px;
-          text-transform: uppercase;
-          transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        .proyect-cardtitle {
+          margin: 0;
+          font-size: 1.5rem;
+          color: #333;
+          font-weight: 700;
+        }
 
-          &:hover {
-            transform: scale(1.06);
-            box-shadow: 0 0px 35px 2px #333;
+        .proyect-cardescrip {
+          font-size: 1rem;
+          color: #777;
+        }
+
+        .proyect-btns {
+          display: flex;
+          align-items: end;
+          gap: 10px;
+
+          .proyect-cardlink {
+            color: aliceblue;
+            background-color: #333;
+            text-decoration: none;
+            padding: 0.6rem 0.9rem;
+            border-radius: 15px;
+            text-transform: uppercase;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+            &:hover {
+              transform: scale(1.06);
+              box-shadow: 0 0px 35px 2px #333;
+            }
           }
         }
       }
