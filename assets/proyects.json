@@ -1,0 +1,73 @@
+[
+  {
+    "img": "../imgs/portfolio1.png",
+    "title": "primera pagina",
+    "descrip": "Esta es mi primera pagina web, mi primer proyecto, es el primer portfolio personal creado con ayuda del primer curso de desallorrador web",
+    "code": "https://github.com/Alejo-Hurtado-Testa/Primera-pagina-personal",
+    "view": "https://portfolioaht.netlify.app/"
+  },
+
+  {
+    "img": "../imgs/portfolio2.png",
+    "title": "segunda pagina",
+    "descrip": "Este es mi segundo proyecto como página personal. El mismo fue creado para con los conocimientos del curso Argentina Programa, pudiendo aplicar más estilos que mi primer página.",
+    "code": "https://github.com/Alejo-Hurtado-Testa/Segunda-pagina-personal",
+    "view": "https://alejohtportfolio.netlify.app"
+  },
+
+  {
+    "img": "../imgs/portfolio-beta.png",
+    "title": "portfolio de prueba",
+    "descrip": "Este es un portafolio de prueba que elabore yo mismo, para poder poner en práctica mis conocimientos, en el mismo, se refleja el cambio en estilos y conocimientos que he logrado adquirir entre este y la segunda pagina.",
+    "code": "https://github.com/Alejo-Hurtado-Testa/Portfolio-prueba",
+    "view": "https://portfoliobeta.netlify.app/"
+  },
+
+  {
+    "img": "../imgs/barberia.png",
+    "title": "barberia alura",
+    "descrip": "Es un proyecto en donde construyo mi primera página casi funcional sobre una barbería y sus respectivas páginas como de contacto, productos, etc. Pudiendo asi hacer un cambio significativo en mis conocimientos",
+    "code": "https://github.com/Alejo-Hurtado-Testa/Primera_Pagina_Web_Alura",
+    "view": "https://barberiaaluraf1.netlify.app/"
+  },
+
+  {
+    "img": "../imgs/buonavita.png",
+    "title": "farmacia buona vita",
+    "descrip": "Proyecto elaborado los curdos de Alura y en el mismo se muestra cómo configurar una tabla de pacientes para agregar, quitar e incluso cargar nuevos pacientes. Este fue, como por asi decirlo, mi primer crud, elaborado con JavaScript.",
+    "code": "https://github.com/Alejo-Hurtado-Testa/Farmacia_Buona_Vita_Alura",
+    "view": "https://farmaciabuonavita.netlify.app/"
+  },
+
+  {
+    "img": "../imgs/indico.png",
+    "title": "INDICO",
+    "descrip": "Este proyecto, desarrollado con el curso de Desarrollo Web de CoderHouse, se trata sobre una página de una empresa de seguridad privada. Es una pagina de presentacion de la empresa, a que se dedican, que es lo que hacen y cual es su objetivo. Este fue un punto importante en mi camino como desarrollador, ya que adquiri los conocimientos para poder hacer responsive una pagina completa.",
+    "code": "https://github.com/Alejo-Hurtado-Testa/INDICO",
+    "view": "https://indicosp.netlify.app/"
+  },
+
+  {
+    "img": "../imgs/maxpower.png",
+    "title": "max power",
+    "descrip": "Proyecto realizado con el curso de JavaScript de coderhouse nuevamente. El mismo simula un surtidor de combustible funcional, donde los clientes ingresan el tipo de combustible que quieren y cuatos litros y eligiendo el metodo de pago que deseen, al final, el surtidor muestra los litros disponibles del combustible elegido.",
+    "code": "https://github.com/Alejo-Hurtado-Testa/Surtidor-de-Combustible",
+    "view": "https://maxpowereds.netlify.app/"
+  },
+
+  {
+    "img": "../imgs/luxorstore.png",
+    "title": "luxor store",
+    "descrip": "Ecommerce sobre la venta de bebidas. Se  utiliza firebase para almacenar los productos y almacenar la orden generada por medio de un formulario",
+    "code": "https://github.com/Alejo-Hurtado-Testa/Luxor-ecommerce",
+    "view": "https://luxorstore.netlify.app"
+  },
+
+  {
+    "img": "../imgs/suburbio.png",
+    "title": "suburbio club",
+    "descrip": "Paigna de presentacion sobre el club, su rubro y para hacer reservas hecha a pedido por el cliente. Guardo con mucha emocion este proyecto, fue mi primer trabajo freelance.",
+    "code": "https://github.com/Alejo-Hurtado-Testa/Suburbio",
+    "view": "https://suburbioclub.netlify.app"
+  }
+]
