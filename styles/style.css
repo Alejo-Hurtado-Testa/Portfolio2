@@ -564,6 +564,17 @@ body {
         }
       }
     }
+
+    .proyects-tech {
+      .tech-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        img {
+          max-width: 50px;
+        }
+      }
+    }
   }
 
   /* SECCION CURRICULUM VITAE */
