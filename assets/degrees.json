@@ -1,0 +1,62 @@
+[
+  {
+    "img": "imgs/certificado_java_coder.png",
+    "title": "Programacion Java",
+    "descrip": "Desarrollo de aplicaciones utilizando el lenguaje de programacion Java, abarcando conceptos fundamentales como la sintaxis, estructuras de control, manejo de excepciones y programacion orientada a objetos.",
+    "institution": "CoderHouse",
+    "year": "09 - 2024"
+  },
+  {
+    "img": "imgs/certificado_rjs_coder.png",
+    "title": "Frontend con ReactJS",
+    "descrip": "Desarrollo frontend utilizando la biblioteca ReactJS, creando interfaces de usuario interactivas y componentes reutilizables para aplicaciones web modernas.",
+    "institution": "CoderHouse",
+    "year": "09 - 2023"
+  },
+  {
+    "img": "imgs/certificado_js_coder.png",
+    "title": "JavaScript",
+    "descrip": "Programacion en JavaScript, abarcando desde conceptos basicos hasta avanzados, incluyendo manipulacion del DOM, eventos, asincronismo y buenas practicas de desarrollo.",
+    "institution": "CoderHouse",
+    "year": "08 - 2023"
+  },
+  {
+    "img": "imgs/certificado_dw_coder.png",
+    "title": "Desarrollo Web",
+    "descrip": "Desarrollo web completo, incluyendo HTML, CSS y JavaScript, para crear sitios web responsivos y atractivos que ofrezcan una experiencia de usuario optima.",
+    "institution": "CoderHouse",
+    "year": "03 - 2023"
+  },
+
+  {
+    "img": "imgs/certificado_js_udemy.jpg",
+    "title": "Universidad JS",
+    "descrip": "Curso completo de JavaScript, cubriendo desde los fundamentos hasta las caracteristicas avanzadas del lenguaje, incluyendo manipulacion del DOM, eventos, asincronismo y buenas practicas de desarrollo.",
+    "institution": "Udemy",
+    "year": "10 - 2023"
+  },
+
+  {
+    "img": "imgs/certificado_html_udemy.jpg",
+    "title": "Universidad HTML5",
+    "descrip": "Curso completo de HTML5, cubriendo desde los fundamentos hasta las caracteristicas avanzadas del lenguaje, incluyendo la estructura de documentos, elementos multimedia, formularios y buenas practicas de desarrollo web.",
+    "institution": "Udemy",
+    "year": "10 - 2023"
+  },
+
+  {
+    "img": "imgs/certificado_py_udemy.jpg",
+    "title": "Python 3",
+    "descrip": "Programacion con Python 3, cubriendo desde conceptos basicos hasta avanzados, incluyendo estructuras de datos, manejo de archivos, programacion orientada a objetos y desarrollo de aplicaciones.",
+    "institution": "Udemy",
+    "year": "11 - 2021"
+  },
+
+  {
+    "img": "imgs/titulo_prog_teclab.png",
+    "title": "Tecnico Superior en Programacion",
+    "descrip": "Carrera de desarrollo de software, orientada a la programacion, analisis y diseño de sistemas, gestion de proyectos y bases de datos.",
+    "institution": "Teclab Instituto Tecnico Superior",
+    "year": "Enero 2022 - Diciembre 2023"
+  }
+]

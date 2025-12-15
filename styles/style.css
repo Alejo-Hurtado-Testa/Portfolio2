@@ -44,6 +44,19 @@
   }
 }
 
+/* Animación del pulso */
+@keyframes pulseGlow {
+  0%,
+  100% {
+    transform: scale(1.6);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0.4;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -112,7 +125,7 @@ body {
   }
 
   .stars::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 200px;
     width: 1px;
@@ -129,7 +142,7 @@ body {
   }
 
   .stars2::after {
-    content: " ";
+    content: ' ';
     position: absolute;
     top: 2000px;
     width: 2px;
@@ -146,7 +159,7 @@ body {
   }
 
   .stars3::after {
-    content: " ";
+    content: ' ';
     position: absolute;
     top: 2000px;
     width: 3px;
@@ -181,6 +194,10 @@ body {
     color: #000000;
     margin-inline: 8rem;
     margin-block: 8rem;
+
+    &:last-of-type {
+      margin-bottom: 1.5rem;
+    }
   }
 
   /* SECCION ACERCA DE */
@@ -236,7 +253,7 @@ body {
             transform: translateY(-10px);
           }
           &::before {
-            content: "";
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
@@ -319,8 +336,9 @@ body {
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          width: 22rem;
-          height: 30rem;
+          min-height: 35rem;
+          min-width: 21rem;
+          /*height: 30rem;*/
           border-radius: 20px;
           padding: 2rem;
           /*background: rgba(255, 255, 255, 0.1);*/
@@ -347,7 +365,7 @@ body {
             justify-content: center;
 
             &::before {
-              content: "finalizado";
+              content: 'finalizado';
               position: absolute;
               width: 150%;
               height: 2.5rem;
@@ -369,7 +387,7 @@ body {
             }
 
             &::after {
-              content: "";
+              content: '';
               position: absolute;
               width: 10px;
               height: 10px;
@@ -386,8 +404,60 @@ body {
             }
           }
 
-          .study-cardimg {
-            max-height: 120px;
+          .studies-wrapp {
+            display: inline-block;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+
+            &:hover {
+              cursor: pointer;
+
+              .study-cardimg {
+                /* oscurece la imagen al pasar el mouse */
+                filter: brightness(0.4);
+              }
+
+              .studies-download-certificate-btn {
+                /* muestra el botón al pasar el mouse */
+                opacity: 1;
+                pointer-events: auto; /* permite clics cuando está visible */
+              }
+            }
+
+            .studies-download-certificate-btn {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              padding: 8px 16px;
+              background: rgba(
+                255,
+                255,
+                255,
+                0.15
+              ); /* transparente tipo glass */
+              color: white;
+              font-weight: bold;
+              border-radius: 6px;
+              text-decoration: none;
+              opacity: 0;
+              transition: 0.3s ease;
+              pointer-events: none;
+              backdrop-filter: blur(6px);
+              z-index: 2; /* encima del overlay */
+              border: 1px solid rgba(255, 255, 255, 0.35); /* evita clics si no está visible */
+            }
+
+            .study-cardimg {
+              max-height: 120px;
+              transition: 0.3s ease;
+              border-radius: 10px;
+              &:hover {
+                z-index: 1;
+                color: rgba(255, 255, 255, 0.144);
+              }
+            }
           }
 
           .study-cardtexts {
@@ -398,10 +468,28 @@ body {
               font-size: 1.7rem;
             }
 
-            .study-carddescrip {
-              margin-top: 1.2rem;
-              color: rgb(150, 148, 148);
-              font-size: 1rem;
+            .study-cardinstitution {
+              margin-top: 0.5rem;
+              color: rgb(148, 147, 147);
+              font-size: 1.1rem;
+              font-weight: 500;
+            }
+
+            .study-carddescripbox {
+              margin-top: 1rem;
+              color: rgb(97, 96, 96);
+              overflow: scroll;
+              max-height: 100px;
+              overflow-y: auto;
+              overflow-x: hidden;
+              &::-webkit-scrollbar {
+                width: 0px;
+              }
+
+              .study-carddescrip {
+                margin-top: 1.2rem;
+                font-size: 1rem;
+              }
             }
           }
         }
@@ -567,12 +655,20 @@ body {
     }
 
     .proyects-tech {
+      margin-top: 4.5rem;
+      .tech-title {
+        text-transform: capitalize;
+        font-size: 2.6rem;
+        color: aliceblue;
+        text-align: center;
+      }
       .tech-container {
+        margin-top: 3rem;
         display: flex;
         justify-content: center;
         gap: 20px;
         img {
-          max-width: 50px;
+          max-width: 90px;
         }
       }
     }
@@ -625,6 +721,77 @@ body {
       &:active {
         transform: translateY(2px);
         box-shadow: none;
+      }
+    }
+  }
+
+  footer {
+    padding: 1rem;
+    text-align: center;
+    color: aliceblue;
+    background: rgba(66, 63, 63, 0.3);
+    backdrop-filter: blur(6px);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.397);
+
+    .footer-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .footer-btnsocialmedia {
+        display: inherit;
+        margin-block: 1.5rem;
+        background-color: transparent;
+        .footer-btnlink {
+          margin: 0px 10px;
+          position: relative; /* da contexto al before */
+          border-radius: 10px;
+          transition: all 0.3s ease;
+          overflow: visible;
+
+          svg {
+            width: 1.7rem;
+            color: aliceblue;
+            transition: all 0.3s ease;
+            z-index: 2;
+          }
+
+          /* brillo detrás del ícono */
+          &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(240, 248, 255, 0.7) 0%,
+              rgba(240, 248, 255, 0.1) 60%,
+              transparent 100%
+            );
+            opacity: 0;
+            transform: scale(0.5);
+            transition: all 0.4s ease;
+            z-index: 1;
+            overflow: hidden;
+          }
+
+          &:hover {
+            transform: scale(1.1);
+
+            &::before {
+              opacity: 1;
+              transform: scale(1.8); /* el brillo se expande */
+              filter: blur(8px);
+              animation: pulseGlow 1.8s ease-in-out infinite;
+            }
+
+            svg {
+              filter: drop-shadow(0 0 6px aliceblue)
+                drop-shadow(0 0 12px aliceblue);
+            }
+          }
+        }
       }
     }
   }
