@@ -69,5 +69,12 @@
     "descrip": "Paigna de presentacion sobre el club, su rubro y para hacer reservas hecha a pedido por el cliente. Guardo con mucha emocion este proyecto, fue mi primer trabajo freelance.",
     "code": "https://github.com/Alejo-Hurtado-Testa/Suburbio",
     "view": "https://suburbioclub.netlify.app"
+  },
+
+  {
+    "img": "../imgs/peluqueriacanina.png",
+    "title": "peluqueria canina",
+    "descrip": "Este proyecto fue realizado con el curso de Java de TodoCode, el mismo consiste en una aplicación de gestión de peluquería canina, con carga, edición y eliminación de los datos.",
+    "view": "https://drive.google.com/drive/folders/1YnM2tAX68Gw5gFBf-T56AfJyXGvBLXCf?usp=sharing"
   }
 ]
